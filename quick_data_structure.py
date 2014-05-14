@@ -1,4 +1,6 @@
 # data structure with fast insertion, removal, membership testing, and random
+import QuickSort
+
 import random
 class QuickData:
   def __init__(self):
@@ -24,4 +26,12 @@ class QuickData:
   def random(self):
     r = random.randint(0, len(self.quick_list) - 1)
     return self.quick_list[r]
+  def sort(self):
+    q = QuickSort(self.quick_list)  # O(nlogn)
+    self.quick_list = q.array # O(n)
+    for i, element in enumerate(self.quick_list):  # O(n)
+      self.quick_hash[element] = i
+    
+    
+    
 
