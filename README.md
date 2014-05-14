@@ -1,4 +1,4 @@
-alogrithmns
+alogrithms
 ===========
 
 Earlier this year I took some time to implement a bunch of alogrithms.  A few of these are already implemented in the python core libraries, but I thought it would be fun to build them out myself.
